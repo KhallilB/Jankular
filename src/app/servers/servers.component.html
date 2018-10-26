@@ -1,3 +1,6 @@
-<div class="btn btn-primary"></div>
-<app-server></app-server>
-<app-server></app-server>
+<button class="btn btn-primary"
+[disabled]="!allowNewServer"
+(click)="onCreateServer()"
+>ADD SERVER TO MAIN</button>
+<p>{{ allowNewServer }}</p>
+<p>{{ serverCreationStatus }}</p>
